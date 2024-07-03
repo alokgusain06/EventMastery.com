@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://eventmastery-com-backend.onrender.com/api/v1/message/send",
+        "https://eventmastery-com.onrender.com/api/v1/message/send",
         { name, email, subject, message },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );
@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://eventmastery-com-backend.onrender.com/api/v1/subscribe",
+        "https://eventmastery-com.onrender.com/api/v1/subscribe",
         { email: subscribeEmail },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );
