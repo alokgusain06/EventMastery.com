@@ -14,7 +14,7 @@ const Footer = () => {
               <input
               type="email"
               placeholder="Email"
-              value={email}
+              value={subscribeemail}
               onChange={(e) => setSubscribeEmail(e.target.value)}
               required
             />
