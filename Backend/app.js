@@ -21,7 +21,7 @@ app.use(express.json());//middleware
 app.use(express.urlencoded({extended:true}));
 app.get("/",(req,res)=>{
   res.json({
-    success:true,
+    success: true,
     message: "successesfull!!",
   });
 });
