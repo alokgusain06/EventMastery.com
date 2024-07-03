@@ -9,7 +9,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [subscribeEmail, setSubscribeEmail] = useState("");
+  
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
@@ -29,20 +29,7 @@ const Contact = () => {
     }
   };
 
-  const handleSubscribe = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post(
-        "https://eventmastery-com.onrender.com/api/v1/subscribe/send",
-        {  subscribeEmail },
-        { withCredentials: true, headers: { "Content-Type": "application/json" } }
-      );
-      toast.success(response.data.message);
-      setSubscribeEmail("");
-    } catch (error) {
-      toast.error(error.response.data.message);
-    }
-  };
+
 
   return (
     <div className="contact-container">
