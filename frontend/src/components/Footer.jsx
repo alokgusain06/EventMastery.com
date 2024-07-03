@@ -10,11 +10,7 @@ const Footer = () => {
         </div>
         <div className="tag">
           <label>News and Updates</label>
-          <div>
-            
-            <button>Subscribe</button>
-          </div>
-          <p>Enter your email address to subscribe and receive regular news and updates!</p>
+          <p>Follow us to receive regular news and updates!</p>
         </div>
        
       <div className="footer-bottom">
