@@ -15,7 +15,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://eventmastery-com-backend.onrender.com/api/v1/message/send",
         { name, email, subject, message },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );
