@@ -9,7 +9,7 @@ const Footer = () => {
           <p>Events and Weddings</p>
         </div>
         <div className="tag">
-          <label>News and Updates</label>
+      
           <p>Follow us to receive regular news and updates!</p>
         </div>
        
