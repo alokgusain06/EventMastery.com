@@ -1,0 +1,76 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  text-align: center;
+}
+
+.contact-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.contact-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.map-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contact-form,
+.subscribe-form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.contact-form h2,
+.subscribe-form h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.subscribe-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button,
+.subscribe-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.subscribe-form button {
+  background-color: #007bff;
+}
