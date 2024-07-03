@@ -33,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/subscribe",
+        "https://eventmastery-com-backend.onrender.com/api/v1/subscribe",
         { email: subscribeEmail },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );
