@@ -33,8 +33,8 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://eventmastery-com.onrender.com/api/v1/subscribe",
-        { email: subscribeEmail },
+        "https://eventmastery-com.onrender.com/api/v1/subscribe/send",
+        {  subscribeEmail },
         { withCredentials: true, headers: { "Content-Type": "application/json" } }
       );
       toast.success(response.data.message);
