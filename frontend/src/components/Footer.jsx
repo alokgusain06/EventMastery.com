@@ -11,7 +11,13 @@ const Footer = () => {
         <div className="tag">
           <label>News and Updates</label>
           <div>
-            <input type="text" placeholder="E-mail" />
+              <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
             <button>Subscribe</button>
           </div>
           <p>Enter your email address to subscribe and receive regular news and updates!</p>
