@@ -19,7 +19,12 @@ app.use(
 
 app.use(express.json());//middleware
 app.use(express.urlencoded({extended:true}));
-
+app.get("/",(req,res)=>{
+  res.json({
+    success:true,
+    message: "successesfull!!",
+  });
+});
 app.use("/api/v1/message", userRouter);
  connectdb();
 
